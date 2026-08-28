@@ -16,7 +16,7 @@ RUN apt-get -y update && apt-get install -y apt-transport-https ca-certificates 
 RUN apt-get -y update && apt-get -y install nodejs && npm update -g npm
 
 # install all needed (or wanted) distro packages
-RUN apt-get -y install bison clang cmake debhelper desktop-file-utils flex git golang gperf gsettings-desktop-schemas-dev\
+RUN apt-get -y install bison clang clang-format cmake debhelper desktop-file-utils flex git golang gperf gsettings-desktop-schemas-dev\
   imagemagick libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libcap-dev libcups2-dev libcurl4-openssl-dev\ 
   libdrm-dev libegl1-mesa-dev libelf-dev libevent-dev libexif-dev libflac-dev libgbm-dev libgcrypt20-dev libgl1-mesa-dev\
   libgles2-mesa-dev libglew-dev libglib2.0-dev libglu1-mesa-dev libgtk-3-dev libhunspell-dev libjpeg-dev libjs-jquery-flot\
